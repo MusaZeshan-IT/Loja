@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import Header from './components/common/Header'
+import Header from './components/common/Header.jsx'
 import HeaderMain from './components/common/HeaderMain'
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
