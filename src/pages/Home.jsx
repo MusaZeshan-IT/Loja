@@ -28,7 +28,6 @@ const Home = () => {
             <div className='px-20'>
                 <CollageRight />
             </div>
-            <Footer />
         </div>
     );
 }

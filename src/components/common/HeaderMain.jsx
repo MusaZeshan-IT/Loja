@@ -4,12 +4,12 @@ import Logo from '../../assets/loja-logo.png'
 
 const HeaderMain = () => {
     return (
-        <header className='flex justify-between items-center py-10 px-52'>
-            <span className='text-3xl'>
+        <header className='flex justify-between items-center py-5 px-52'>
+            <span className='text-xl'>
                 <Link>CONTACT US</Link>
             </span>
-            <img className='h-32' src={Logo} alt="" />
-            <span className='text-3xl'>
+            <img className='h-[70px]' src={Logo} alt="" />
+            <span className='text-xl'>
                 <Link>LOGIN / REGISTER</Link>
             </span>
         </header>
