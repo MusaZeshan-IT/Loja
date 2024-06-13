@@ -32,38 +32,50 @@ const CardProductList = () => {
                 url: Clothes3,
                 category: 'clothing'
             },
+            {
+                id: 4,
+                category: 'clothing'
+            },
 
             // ACCESSORIES
             {
-                id: 4,
+                id: 5,
                 url: Accessories1,
                 category: 'accessories'
             },
             {
-                id: 5,
+                id: 6,
                 url: Accessories2,
                 category: 'accessories'
             },
             {
-                id: 6,
+                id: 7,
                 url: Accessories3,
+                category: 'accessories'
+            },
+            {
+                id: 8,
                 category: 'accessories'
             },
 
             // APPLIANCES
             {
-                id: 7,
+                id: 9,
                 url: Appliances1,
                 category: 'appliances'
             },
             {
-                id: 8,
+                id: 10,
                 url: Appliances2,
                 category: 'appliances'
             },
             {
-                id: 9,
+                id: 11,
                 url: Appliances3,
+                category: 'appliances'
+            },
+            {
+                id: 12,
                 category: 'appliances'
             },
         ]
