@@ -1,9 +1,10 @@
 import React from 'react';
+import Collage from '../components/home/Collage';
 
 const Home = () => {
     return (
-        <div>
-            <h1 className='text-3xl'>Home Page</h1>
+        <div className='px-20 pb-20'>
+            <Collage />
         </div>
     );
 }
