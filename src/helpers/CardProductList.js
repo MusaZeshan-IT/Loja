@@ -69,3 +69,5 @@ const CardProductList = () => {
         ]
     )
 }
+
+export default CardProductList;

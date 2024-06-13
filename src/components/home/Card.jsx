@@ -1,14 +1,13 @@
 import React from 'react';
 
-const Card = ({ url, category }) => {
+const Card = ({ url }) => {
     return (
         <div className="w-full h-52 bg-black rounded-3xl shadow-lg">
             <img
-                src={Clothes1}
+                src={url}
                 alt="Profile"
                 className="w-full h-full object-cover rounded-lg"
             />
-            <h2 className='text-3xl text-center mt-16'>{category.toLocaleUpperCase()}</h2>
         </div>
     );
 };

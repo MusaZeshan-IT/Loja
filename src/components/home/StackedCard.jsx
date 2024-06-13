@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TinderCard from 'react-tinder-card';
 import Card from './Card';
 
-const StackedCard = ({ profile }) => {
+const StackedCard = ({ profile, setProfiles, profiles }) => {
 
     const swiped = (direction, id) => {
         console.log(`Removing: ${id}`);

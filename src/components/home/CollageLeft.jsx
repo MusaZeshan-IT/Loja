@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Collage = () => {
+const CollageLeft = () => {
     return (
         <div className='mt-10 flex h-[600px] gap-x-5'>
             <div className='bg-[#cdc6c0] h-full w-[42%]'></div>
@@ -15,4 +15,4 @@ const Collage = () => {
     );
 }
 
-export default Collage;
+export default CollageLeft;

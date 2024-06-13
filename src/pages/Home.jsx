@@ -1,24 +1,34 @@
 import React, { useState } from 'react';
-import Collage from '../components/home/Collage';
 import StackedCard from '../components/home/StackedCard';
+import CardProductList from '../helpers/CardProductList';
+import CollageLeft from '../components/home/CollageLeft';
+import CollageRight from '../components/home/CollageRight';
+import Categories from '../components/home/Categories';
+import CoverImage from '../components/home/CoverImage';
+import Footer from '../components/common/Footer';
 
 const Home = () => {
-    const [profiles, setProfiles] = useState([
-        { id: 1, category: 'clothing' },
-        { id: 2, category: 'accessories' },
-        { id: 3, category: 'loja products' },
-    ]);
+    const [profiles, setProfiles] = useState(CardProductList());
 
     return (
-        <div className='px-20 pb-20'>
-            <Collage />
-            <div className='py-32'>
-                <div className='flex gap-16 h-52 w-full'>
-                    {profiles.map((profile) => (
-                        <StackedCard profile={profile} key={profile.id} category={profile.category} />
-                    ))}
+        <div className='pb-20'>
+            <div className='px-20'>
+                <CollageLeft />
+                <div className='py-32'>
+                    <div className='flex gap-16 h-52 w-full'>
+                        {profiles.map((profile) => (
+                            <StackedCard setProfiles={setProfiles} profiles={profiles} profile={profile} key={profile.id} category={profile.category} />
+                        ))}
+                    </div>
                 </div>
+                <CollageRight />
+                <Categories />
             </div>
+            <CoverImage />
+            <div className='px-20'>
+                <CollageRight />
+            </div>
+            <Footer />
         </div>
     );
 }
