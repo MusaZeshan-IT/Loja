@@ -5,6 +5,7 @@ import CollageLeft from '../components/home/CollageLeft';
 import CollageRight from '../components/home/CollageRight';
 import Categories from '../components/home/Categories';
 import CoverImage from '../components/home/CoverImage';
+import Seller from '../components/home/Seller';
 
 const Home = () => {
     const [profiles, setProfiles] = useState(CardProductList());
@@ -38,6 +39,7 @@ const Home = () => {
                 </div>
                 <CollageRight />
                 <Categories />
+                <Seller />
             </div>
             <CoverImage />
             <div className='px-20'>
