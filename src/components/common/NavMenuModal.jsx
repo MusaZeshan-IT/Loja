@@ -6,17 +6,25 @@ const NavMenuModal = ({ showNavMenu, handleCloseNavMenu }) => {
     if (showNavMenu) {
         return (
             <div className='lg:hidden block z-20 fixed inset-0 bg-black bg-opacity-50 h-full w-full'>
-                <div className='bg-white p-10 flex justify-between'>
+                <div className='bg-white flex md-custom:p-10 md:p-9 sm-custom:p-8 sm:p-7 xs-custom:p-6 p-5 justify-between'>
                     <div>
-                        <nav className='flex flex-col justify-center gap-14 py-5 tracking-wider'>
+                        <nav className='flex flex-col justify-center py-5 tracking-wider'>
                             <img className='h-20 w-48' src={Logo} alt="" />
-                            <div className='ms-6 flex flex-col gap-y-8 text-2xl font-semibold'>
+                            <div className='sm:w-96 w-40 border-t-2 border-black ms-5 mb-14'>
+                            </div>
+                            <div className='ms-6 grid sm:grid-cols-2 gap-x-16 gap-y-8 text-2xl font-semibold'>
                                 <Link>HOME</Link>
                                 <Link>CLOTHES</Link>
                                 <Link>ACCESSORIES</Link>
                                 <Link>APPLIANCES</Link>
                                 <Link>LOJA PRODUCTS</Link>
                                 <Link>ABOUT US</Link>
+                                <span className='sm-custom:hidden block'>
+                                    <Link>CONTACT US</Link>
+                                </span>
+                                <span className='xs:hidden block'>
+                                    <Link>LOGIN / REGISTER</Link>
+                                </span>
                             </div>
                         </nav>
                     </div>

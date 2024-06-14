@@ -20,8 +20,12 @@ const Navbar = ({ handleOpenNavMenu }) => {
                         <img className='h-[60px]' src={Logo} alt="" />
                     </div>
                     <div className='text-xl flex gap-8'>
-                        <Link>CONTACT US</Link>
-                        <Link>LOGIN / REGISTER</Link>
+                        <span className='sm-custom:block hidden'>
+                            <Link>CONTACT US</Link>
+                        </span>
+                        <span className='xs:block hidden'>
+                            <Link>LOGIN / REGISTER</Link>
+                        </span>
                     </div>
                 </div>
             </nav>
