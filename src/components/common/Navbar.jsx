@@ -15,9 +15,10 @@ const Navbar = ({ handleOpenNavMenu }) => {
             </nav>
             <nav className='lg:hidden block'>
                 <div className='lg:hidden flex justify-between px-12 items-center border-b-2 border-black py-5 tracking-wider'>
-                    <div className='flex gap-4 items-center'>
-                        <i onClick={() => handleOpenNavMenu()} className='fa-solid fa-bars text-3xl'></i>
-                        <img className='h-[60px]' src={Logo} alt="" />
+                    <div className='flex xs:justify-normal justify-between xs:w-fit w-full gap-4 items-center'>
+                        <i onClick={() => handleOpenNavMenu()} className='xs:block hidden fa-solid fa-bars md:text-3xl sm:tex-2xl text-xl'></i>
+                        <img className='md:h-[60px] sm:h-[55px] h-[50px]' src={Logo} alt="" />
+                        <i onClick={() => handleOpenNavMenu()} className='xs:hidden inline-block fa-solid fa-bars md:text-3xl sm:tex-2xl 2xs:text-xl text-lg'></i>
                     </div>
                     <div className='text-xl flex gap-8'>
                         <span className='sm-custom:block hidden'>
