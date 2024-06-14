@@ -4,7 +4,7 @@ import Logo from '../../assets/loja-logo.png'
 
 const HeaderMain = () => {
     return (
-        <header className='flex justify-between items-center py-5 px-52'>
+        <header className='justify-between items-center py-5 px-52 lg:flex hidden'>
             <span className='text-xl'>
                 <Link>CONTACT US</Link>
             </span>
