@@ -8,7 +8,7 @@ const Card = ({ url, imageExhausted }) => {
                     <p className='text-white text-lg'>No more images in this category</p>
                 </div>
             ) : (
-                <div className="w-full h-52 rounded-3xl overflow-hidden">
+                <div className="w-full h-52 rounded-3xl overflow-hidden shadow-md">
                     <img
                         onDragStart={(e) => e.preventDefault()}
                         src={url}
