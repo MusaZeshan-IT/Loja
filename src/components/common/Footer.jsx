@@ -25,15 +25,21 @@ const Footer = () => {
                 </div>
                 <div className=''>
                     <div className='flex gap-x-3 justify-end'>
-                        <div className='bg-[#cdc6c0] rounded-[50%] h-10 w-10 flex justify-center items-center'>
-                            <i className='fa-brands fa-instagram text-[26px]'></i>
-                        </div>
-                        <div className='bg-[#cdc6c0] rounded-[50%] h-10 w-10 flex justify-center items-center'>
-                            <i className='fa-brands fa-square-facebook text-[26px]'></i>
-                        </div>
-                        <div className='bg-[#cdc6c0] rounded-[50%] h-10 w-10 flex justify-center items-center'>
-                            <i className='fa-brands fa-linkedin-in text-[26px]'></i>
-                        </div>
+                        <Link>
+                            <div className='bg-[#cdc6c0] rounded-[50%] h-10 w-10 flex justify-center items-center'>
+                                <i className='fa-brands fa-instagram text-[26px]'></i>
+                            </div>
+                        </Link>
+                        <Link>
+                            <div className='bg-[#cdc6c0] rounded-[50%] h-10 w-10 flex justify-center items-center'>
+                                <i className='fa-brands fa-square-facebook text-[26px]'></i>
+                            </div>
+                        </Link>
+                        <Link>
+                            <div className='bg-[#cdc6c0] rounded-[50%] h-10 w-10 flex justify-center items-center'>
+                                <i className='fa-brands fa-linkedin-in text-[26px]'></i>
+                            </div>
+                        </Link>
                     </div>
                     <FooterCard />
                 </div>
