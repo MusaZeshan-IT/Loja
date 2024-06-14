@@ -8,8 +8,9 @@ const Header = () => {
                 <span>FREE DELIVERY</span>
             </div>
             <div className='text-white'>
-                <i className='fa-brands fa-instagram text-2xl me-10'></i>
-                <i className='fa-brands fa-facebook text-2xl'></i>
+                <i className='fa-brands fa-instagram text-2xl me-8'></i>
+                <i className='fa-brands fa-facebook text-2xl me-8'></i>
+                <i className='fa-brands fa-linkedin text-2xl'></i>
             </div>
         </header>
     );
