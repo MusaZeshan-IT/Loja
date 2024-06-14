@@ -2,25 +2,25 @@ import React, { useState, useEffect } from 'react';
 import TinderCard from 'react-tinder-card';
 import Card from './Card';
 
-const StackedCard = ({ profile, setProfiles, profiles }) => {
+const StackedCard = ({ image, setImages, images }) => {
     const [imagesExhausted, setImagesExhausted] = useState(false);
 
     useEffect(() => {
         // Check if there are no more images in the current category
-        const remainingProfiles = profiles.filter(p => p.category === profile.category);
-        if (remainingProfiles.length === 0 || remainingProfiles.every(p => !p.url)) {
+        const remainingImages = images.filter(p => p.category === image.category);
+        if (remainingImages.length === 0 || remainingImages.every(p => !p.url)) {
             setImagesExhausted(true);
         }
-    }, [profiles, profile.category]);
+    }, [images, image.category]);
 
     const outOfFrame = (id) => {
-        setProfiles(profiles.filter(profile => profile.id !== id));
+        setImages(images.filter(image => image.id !== id));
     };
 
     return (
         <div className='w-full relative'>
-            {profiles
-                .filter(p => p.category === profile.category)
+            {images
+                .filter(p => p.category === image.category)
                 .map((p, index) => (
                     <div key={p.id}>
                         {p.url === undefined ? (
@@ -32,7 +32,7 @@ const StackedCard = ({ profile, setProfiles, profiles }) => {
                                 <div
                                     className="absolute top-0 left-0 w-full h-full transform"
                                     style={{
-                                        zIndex: profiles.length - index,
+                                        zIndex: images.length - index,
                                     }}
                                 >
                                     <TinderCard
@@ -45,7 +45,7 @@ const StackedCard = ({ profile, setProfiles, profiles }) => {
                         )}
                     </div>
                 ))}
-            <h2 className='text-[28px] mt-12 text-center font-light tracking-wide'>{profile.category.toLocaleUpperCase()}</h2>
+            <h2 className='text-[28px] mt-12 text-center font-light tracking-wide'>{image.category.toLocaleUpperCase()}</h2>
         </div>
     );
 }

@@ -8,7 +8,7 @@ import CoverImage from '../components/home/CoverImage';
 import Seller from '../components/home/Seller';
 
 const Home = () => {
-    const [profiles, setProfiles] = useState(CardProductList());
+    const [images, setImages] = useState(CardProductList());
 
     // Create an object to store whether a category has been rendered or not
     const renderedCategories = {};
@@ -19,17 +19,17 @@ const Home = () => {
                 <CollageLeft />
                 <div className='py-32'>
                     <div className='flex gap-16 h-52 w-full'>
-                        {profiles.map((profile) => {
+                        {images.map((image) => {
                             // Check if the category has already been rendered
-                            if (!renderedCategories[profile.category]) {
-                                renderedCategories[profile.category] = true; // Mark the category as rendered
+                            if (!renderedCategories[image.category]) {
+                                renderedCategories[image.category] = true; // Mark the category as rendered
                                 return (
                                     <StackedCard
-                                        setProfiles={setProfiles}
-                                        profiles={profiles}
-                                        profile={profile}
-                                        key={profile.id}
-                                        category={profile.category}
+                                        setImages={setImages}
+                                        images={images}
+                                        image={image}
+                                        key={image.id}
+                                        category={image.category}
                                     />
                                 );
                             }
