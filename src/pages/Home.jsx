@@ -14,7 +14,7 @@ const Home = () => {
     const renderedCategories = {};
 
     return (
-        <div className='pb-20'>
+        <div>
             <div className='2xl:px-28 xl-custom:px-24 xl:px-20 lg-custom:px-16 lg:px-14 px-12'>
                 <CollageLeft />
                 <div className='py-32'>
