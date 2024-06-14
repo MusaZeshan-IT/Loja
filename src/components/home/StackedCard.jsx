@@ -3,7 +3,6 @@ import TinderCard from 'react-tinder-card';
 import Card from './Card';
 
 const StackedCard = ({ profile, setProfiles, profiles }) => {
-    const [rotationOffset, setRotationOffset] = useState(0);
     const [imagesExhausted, setImagesExhausted] = useState(false);
 
     useEffect(() => {
@@ -13,8 +12,6 @@ const StackedCard = ({ profile, setProfiles, profiles }) => {
             setImagesExhausted(true);
         }
     }, [profiles, profile.category]);
-
-    const swiped = (direction, id) => { };
 
     const outOfFrame = (id) => {
         setProfiles(profiles.filter(profile => profile.id !== id));
@@ -29,27 +26,26 @@ const StackedCard = ({ profile, setProfiles, profiles }) => {
                         {p.url === undefined ? (
                             <>
                                 <Card imageExhausted={imagesExhausted} category={p.category} />
-                                <h2 className='text-[28px] mt-12 text-center font-light tracking-wide'>{profile.category.toLocaleUpperCase()}</h2>
                             </>
                         ) : (
-                            <div
-                                className="absolute w-full h-full transform"
-                                style={{
-                                    zIndex: profiles.length - index,
-                                    transform: `rotate(${rotationOffset * index}deg)`,
-                                }}
-                            >
-                                <TinderCard
-                                    onSwipe={(dir) => swiped(dir, p.id)}
-                                    onCardLeftScreen={() => outOfFrame(p.id)}
+                            <>
+                                <div
+                                    className="absolute top-0 left-0 w-full h-full transform"
+                                    style={{
+                                        zIndex: profiles.length - index,
+                                    }}
                                 >
-                                    <Card url={p.url} category={p.category} />
-                                </TinderCard>
-                                <h2 className='text-[28px] mt-12 text-center font-light tracking-wide'>{profile.category.toLocaleUpperCase()}</h2>
-                            </div>
+                                    <TinderCard
+                                        onCardLeftScreen={() => outOfFrame(p.id)}
+                                    >
+                                        <Card url={p.url} category={p.category} />
+                                    </TinderCard>
+                                </div>
+                            </>
                         )}
                     </div>
                 ))}
+            <h2 className='text-[28px] mt-12 text-center font-light tracking-wide'>{profile.category.toLocaleUpperCase()}</h2>
         </div>
     );
 }
