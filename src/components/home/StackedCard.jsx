@@ -29,18 +29,48 @@ const StackedCard = ({ image, setImages, images }) => {
                             </>
                         ) : (
                             <>
-                                <div
-                                    className="absolute top-0 left-0 w-full h-full transform"
-                                    style={{
-                                        zIndex: images.length - index,
-                                    }}
-                                >
-                                    <TinderCard
-                                        onCardLeftScreen={() => outOfFrame(p.id)}
+                                {index === 0 ? (
+                                    <div
+                                        className="absolute top-0 left-0 w-full h-full transform"
+                                        style={{
+                                            zIndex: images.length - index,
+                                        }}
                                     >
-                                        <Card url={p.url} category={p.category} />
-                                    </TinderCard>
-                                </div>
+                                        <TinderCard
+                                            onCardLeftScreen={() => outOfFrame(p.id)}
+                                        >
+                                            <Card url={p.url} category={p.category} />
+                                        </TinderCard>
+                                    </div>
+                                ) : (
+                                    index % 2 === 0 && index > 0 ? (
+                                        <div
+                                            className="absolute top-0 left-0 w-full h-full transform rotate-3"
+                                            style={{
+                                                zIndex: images.length - index,
+                                            }}
+                                        >
+                                            <TinderCard
+                                                onCardLeftScreen={() => outOfFrame(p.id)}
+                                            >
+                                                <Card url={p.url} category={p.category} />
+                                            </TinderCard>
+                                        </div>
+                                    ) : (
+                                        <div
+                                            className="absolute top-0 left-0 w-full h-full transform -rotate-3"
+                                            style={{
+                                                zIndex: images.length - index,
+                                            }}
+                                        >
+                                            <TinderCard
+                                                onCardLeftScreen={() => outOfFrame(p.id)}
+                                            >
+                                                <Card url={p.url} category={p.category} />
+                                            </TinderCard>
+                                        </div>
+                                    )
+                                )}
                             </>
                         )}
                     </div>
