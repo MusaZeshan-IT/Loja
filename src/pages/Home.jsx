@@ -15,7 +15,7 @@ const Home = () => {
 
     return (
         <div className='pb-20'>
-            <div className='px-20'>
+            <div className='2xl:px-28 xl-custom:px-24 xl:px-20 lg-custom:px-16 lg:px-14 px-12'>
                 <CollageLeft />
                 <div className='py-32'>
                     <div className='flex gap-16 h-52 w-full'>
@@ -42,7 +42,7 @@ const Home = () => {
                 <Seller />
             </div>
             <CoverImage />
-            <div className='px-20'>
+            <div className='2xl:px-28 xl-custom:px-24 xl:px-20 lg-custom:px-16 lg:px-14 px-12'>
                 <CollageRight isCollageEnd={true} />
             </div>
         </div>
