@@ -45,7 +45,7 @@ const StackedCard = ({ image, setImages, images }) => {
                                 ) : (
                                     index % 2 === 0 && index > 0 ? (
                                         <div
-                                            className="absolute top-0 left-0 w-full h-full transform rotate-3"
+                                            className="absolute top-0 left-0 w-full h-full transform rotate-[5deg]"
                                             style={{
                                                 zIndex: images.length - index,
                                             }}
@@ -58,7 +58,7 @@ const StackedCard = ({ image, setImages, images }) => {
                                         </div>
                                     ) : (
                                         <div
-                                            className="absolute top-0 left-0 w-full h-full transform -rotate-3"
+                                            className="absolute top-0 left-0 w-full h-full transform -rotate-[5deg]"
                                             style={{
                                                 zIndex: images.length - index,
                                             }}
