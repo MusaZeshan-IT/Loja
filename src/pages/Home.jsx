@@ -43,7 +43,7 @@ const Home = () => {
             </div>
             <CoverImage />
             <div className='px-20'>
-                <CollageRight />
+                <CollageRight isCollageEnd={true} />
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const CollageLeft = () => {
     return (
-        <div className='mt-10 flex h-[600px] gap-x-5'>
+        <div className='mt-28 flex h-[600px] gap-x-5'>
             <div className='bg-[#cdc6c0] h-full w-[42%]'></div>
             <div className='flex flex-col h-full w-[58%] gap-y-5'>
                 <div className='bg-[#cdc6c0] h-full w-full'></div>
