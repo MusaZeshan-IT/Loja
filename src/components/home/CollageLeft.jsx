@@ -6,15 +6,15 @@ import Image4 from '../../assets/allClothesImages/IMAGE 4.jpg';
 
 const CollageLeft = () => {
     return (
-        <div className='mt-28 flex h-[600px] gap-x-5'>
-            <div className='border border-[#e6e6e6] h-full w-[42%]'>
+        <div className='mt-28 flex lg:flex-row flex-col lg:gap-x-5 gap-y-5'>
+            <div className='border-2 border-[#d3d3d3] sm:h-[560px] xs-custom:h-[400px] 2xs-custom:h-[320px] h-[240px] lg:w-[42%]'>
                 <img className='w-full h-full' src={Image1} alt="" />
             </div>
-            <div className='flex flex-col h-full w-[58%] gap-y-5'>
-                <img className='h-[50%] w-full border border-[#e6e6e6]' src={Image2} alt="" />
-                <div className='h-[50%] w-full flex gap-x-5'>
-                    <img className='border border-[#e6e6e6] h-full w-3/5 overflow-hidden' src={Image3} alt="" />
-                    <img className='border border-[#e6e6e6] h-full w-2/5' src={Image4} alt="" />
+            <div className='flex flex-col h-full lg:w-[58%] gap-y-5'>
+                <img className='lg:h-[270px] sm:h-[560px] xs-custom:h-[400px] 2xs-custom:h-[320px] h-[240px] w-full border-2 border-[#d3d3d3]' src={Image2} alt="" />
+                <div className='sm:h-[270px] w-full flex sm:flex-row flex-col sm:gap-x-5 gap-y-5'>
+                    <img className='border-2 border-[#d3d3d3] sm:h-full 2xs-custom:h-[340px] h-[240px] sm:w-3/5' src={Image3} alt="" />
+                    <img className='border-2 border-[#d3d3d3] sm:h-full 2xs-custom:h-[340px] h-[240px] sm:w-2/5' src={Image4} alt="" />
                 </div>
             </div>
         </div>
