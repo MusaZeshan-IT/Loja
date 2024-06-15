@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/loja-logo.png';
 
 const NavMenuModal = ({ showNavMenu, handleCloseNavMenu }) => {
+    useEffect(() => {
+        if (showNavMenu) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [showNavMenu]);
+
     if (showNavMenu) {
         return (
-            <div className='lg:hidden block z-20 fixed inset-0 bg-black bg-opacity-50 h-full w-full'>
+            <div className='overflow-y-auto lg:hidden block z-20 fixed inset-0 bg-black bg-opacity-50 h-full w-full'>
                 <div className='bg-white flex md-custom:p-10 md:p-9 sm-custom:p-8 sm:p-7 xs-custom:p-6 p-5 justify-between'>
                     <div>
                         <nav className='flex flex-col justify-center py-5 tracking-wider'>
