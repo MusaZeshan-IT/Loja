@@ -6,7 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      //border-2 border-[#d3d3d3]
       screens: {
         // Tailwind CSS screen sizes
         // 'sm': '640px',

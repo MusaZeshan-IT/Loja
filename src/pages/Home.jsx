@@ -18,7 +18,7 @@ const Home = () => {
             <div className='2xl:px-28 xl-custom:px-24 xl:px-20 lg-custom:px-16 lg:px-14 px-12'>
                 <CollageLeft />
                 <div className='py-32'>
-                    <div className='flex md:flex-row flex-col md:gap-x-16 gap-y-40 md:h-52 w-full'>
+                    <div className='flex md:flex-row flex-col md:gap-x-16 gap-y-20 md:h-52 w-full'>
                         {images.map((image) => {
                             // Check if the category has already been rendered
                             if (!renderedCategories[image.category]) {

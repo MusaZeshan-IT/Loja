@@ -1,5 +1,5 @@
 import React from 'react';
-import CategoryCircle from './CategoryCircle';
+import CategoryCircle from './CategoryBox';
 import Logo from '../../assets/loja-logo.png'
 
 const Categories = () => {
