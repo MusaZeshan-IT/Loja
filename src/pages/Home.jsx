@@ -6,6 +6,7 @@ import CollageRight from '../components/home/CollageRight';
 import Categories from '../components/home/Categories';
 import CoverImage from '../components/home/CoverImage';
 import Seller from '../components/home/Seller';
+import Gallery from '../components/home/Gallery';
 
 const Home = () => {
     const [images, setImages] = useState(CardProductList());
@@ -37,14 +38,13 @@ const Home = () => {
                         })}
                     </div>
                 </div>
-                <CollageRight />
+            </div>
+            <Gallery />
+            <div className='2xl:px-28 xl-custom:px-24 xl:px-20 lg-custom:px-16 lg:px-14 px-12'>
                 <Categories />
                 <Seller />
             </div>
-            <CoverImage />
-            <div className='2xl:px-28 xl-custom:px-24 xl:px-20 lg-custom:px-16 lg:px-14 px-12'>
-                <CollageRight isCollageEnd={true} />
-            </div>
+            <CollageRight isCollageEnd={true} />
         </div>
     );
 }

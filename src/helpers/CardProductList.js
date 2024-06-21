@@ -1,17 +1,17 @@
 // CLOTHES IMAGES
-import Clothes1 from '../assets/clothes/clothes1.jpg'
-import Clothes2 from '../assets/clothes/clothes2.jpg'
-import Clothes3 from '../assets/clothes/clothes3.jpg'
+import Clothes1 from '../assets/clothes/img1.jpg'
+import Clothes2 from '../assets/clothes/img2.jpg'
+import Clothes3 from '../assets/clothes/img3.jpg'
 
 // ACCESSORIES IMAGES
-import Accessories1 from '../assets/accessories/accessories1.jpg'
-import Accessories2 from '../assets/accessories/accessories2.jpg'
-import Accessories3 from '../assets/accessories/accessories3.jpg'
+import Accessories1 from '../assets/accessories/img1.webp'
+import Accessories2 from '../assets/accessories/img2.jpg'
+import Accessories3 from '../assets/accessories/img3.jpg'
 
 // APPLIANCES IMAGES
-import Appliances1 from '../assets/appliances/appliances1.jpg'
-import Appliances2 from '../assets/appliances/appliances2.jpg'
-import Appliances3 from '../assets/appliances/appliances3.jpg'
+// import LojaProduct1 from '../assets/appliances/img1.webp'
+// import LojaProduct2 from '../assets/appliances/img2.webp'
+// import LojaProduct3 from '../assets/appliances/img3.webp'
 
 const CardProductList = () => {
     return (
@@ -58,25 +58,25 @@ const CardProductList = () => {
                 category: 'accessories'
             },
 
-            // APPLIANCES
+            // Loja Products
             {
                 id: 9,
-                url: Appliances1,
-                category: 'appliances'
+                url: '',
+                category: 'lojaProducts'
             },
             {
                 id: 10,
-                url: Appliances2,
-                category: 'appliances'
+                url: '',
+                category: 'lojaProducts'
             },
             {
                 id: 11,
-                url: Appliances3,
-                category: 'appliances'
+                url: '',
+                category: 'lojaProducts'
             },
             {
                 id: 12,
-                category: 'appliances'
+                category: 'lojaProducts'
             },
         ]
     )

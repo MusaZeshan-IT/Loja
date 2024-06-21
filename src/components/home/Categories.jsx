@@ -6,11 +6,11 @@ const Categories = () => {
     return (
         <div className='py-32'>
             <h2 className='sm-custom:text-[45px] sm:text-[42px] xs-custom:text-[35px] xs:text-[30px] text-[25.5px] text-center'>CATEGORIES</h2>
-            <div className='grid lg:grid-cols-5 place-items-center sm:grid-cols-2 grid-cols-1 mt-6'>
+            <div className='grid lg:grid-cols-5 place-items-center grid-cols-2 mt-6'>
                 <CategoryCircle categoryName='Home' iconName='fa-solid fa-house'></CategoryCircle>
                 <CategoryCircle categoryName='Clothing' iconName='fa-solid fa-tshirt'></CategoryCircle>
                 <CategoryCircle categoryName='Loja Products' imgUrl={Logo}></CategoryCircle>
-                <CategoryCircle categoryName='Appliances' iconName='fa-solid fa-lightbulb'></CategoryCircle>
+                <CategoryCircle categoryName='Appliances' iconName='fa-solid fa-tv'></CategoryCircle>
                 <CategoryCircle categoryName='Accessories' iconName='fa-solid fa-bag-shopping'></CategoryCircle>
             </div>
         </div>
