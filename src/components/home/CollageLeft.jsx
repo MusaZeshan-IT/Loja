@@ -1,7 +1,7 @@
 import React from 'react';
 import Image1 from '../../assets/collageLeft/img1.webp';
 import Image2 from '../../assets/collageLeft/img2.webp';
-import Image3 from '../../assets/collageLeft/img3.webp';
+import Image3 from '../../assets/collageLeft/img3.jpg';
 import Image4 from '../../assets/collageLeft/img4.webp';
 
 const CollageLeft = () => {
