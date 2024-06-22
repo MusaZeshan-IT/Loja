@@ -7,6 +7,7 @@ import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
 import NavMenuModal from './components/common/NavMenuModal'
 import './App.css'
+import Clothes from './pages/Clothes'
 
 function App() {
   const [showNavMenu, setShowNavMenu] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <Navbar handleOpenNavMenu={handleOpenNavMenu} element={<Navbar />} />
         <Routes>
           <Route exact path='/' element={<Home />} />
+          <Route path='/clothes' element={<Clothes />} />
         </Routes>
         <Footer element={<Footer />} />
       </Router>

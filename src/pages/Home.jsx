@@ -4,7 +4,6 @@ import CardProductList from '../helpers/CardProductList';
 import CollageLeft from '../components/home/CollageLeft';
 import CollageRight from '../components/home/CollageRight';
 import Categories from '../components/home/Categories';
-import CoverImage from '../components/home/CoverImage';
 import Seller from '../components/home/Seller';
 import Gallery from '../components/home/Gallery';
 
