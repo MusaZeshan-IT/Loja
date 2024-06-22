@@ -11,18 +11,30 @@ const Gallery = () => {
     return (
         <div className='h-auto flex lg:flex-row flex-col-reverse pt-32 w-full'>
             <div className='flex flex-col lg:w-[40%]'>
-                <img className='h-[350px] w-full object-cover' src={Img1} alt="" />
+                <div className='h-[350px] overflow-hidden'>
+                    <img className='h-[350px] transition-transform duration-300 ease-in-out transform hover:scale-110 w-full object-cover' src={Img1} alt="" />
+                </div>
                 <div className='flex sm-custom:flex-row flex-col'>
-                    <img className='h-[310px] w-full object-cover' src={Img2} alt="" />
-                    <img className='h-[310px] w-full object-cover' src={Img3} alt="" />
+                    <div className='overflow-hidden h-[310px] w-full'>
+                        <img className='transition-transform duration-300 ease-in-out transform hover:scale-110 h-[310px] w-full object-cover' src={Img2} alt="" />
+                    </div>
+                    <div className='overflow-hidden h-[310px] w-full'>
+                        <img className='transition-transform duration-300 ease-in-out transform hover:scale-110 h-[310px] w-full object-cover' src={Img3} alt="" />
+                    </div>
                 </div>
             </div>
             <div className='flex sm-custom:flex-row flex-col-reverse lg:w-[60%]'>
                 <div className='flex flex-col sm-custom:w-[50%] h-[660px]'>
-                    <img className='h-[400px] w-full object-cover' src={Img4} alt="" />
-                    <img className='h-[260px] w-full object-cover' src={Img5} alt="" />
+                    <div className='overflow-hidden h-[400px] w-full'>
+                        <img className='transition-transform duration-300 ease-in-out transform hover:scale-110 h-[400px] w-full object-cover' src={Img4} alt="" />
+                    </div>
+                    <div className='overflow-hidden h-[260px] w-full'>
+                        <img className='transition-transform duration-300 ease-in-out transform hover:scale-110 h-[260px] w-full object-cover' src={Img5} alt="" />
+                    </div>
                 </div>
-                <img className='h-[660px] sm-custom:w-[50%] object-cover' src={Img6} alt="" />
+                <div className='overflow-hidden h-[660px] sm-custom:w-[50%]'>
+                    <img className='transition-transform duration-300 ease-in-out transform hover:scale-110 h-[660px] w-full object-cover' src={Img6} alt="" />
+                </div>
             </div>
         </div>
     );
