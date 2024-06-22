@@ -8,8 +8,8 @@ const Navbar = ({ handleOpenNavMenu }) => {
             <nav className='lg:flex hidden justify-center gap-14 border-y-2 border-black py-5 tracking-wider'>
                 <Link to="/">HOME</Link>
                 <Link to="/clothes">CLOTHES</Link>
-                <Link>ACCESSORIES</Link>
-                <Link>APPLIANCES</Link>
+                <Link to="/accessories">ACCESSORIES</Link>
+                <Link to="/appliances">APPLIANCES</Link>
                 <Link>LOJA PRODUCTS</Link>
                 <Link>ABOUT US</Link>
             </nav>

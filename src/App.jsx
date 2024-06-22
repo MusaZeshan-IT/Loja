@@ -8,6 +8,8 @@ import Footer from './components/common/Footer'
 import NavMenuModal from './components/common/NavMenuModal'
 import './App.css'
 import Clothes from './pages/Clothes'
+import Appliances from './pages/Appliances'
+import Accessories from './pages/Accessories'
 
 function App() {
   const [showNavMenu, setShowNavMenu] = useState(false);
@@ -28,6 +30,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/clothes' element={<Clothes />} />
+          <Route path='/appliances' element={<Appliances />} />
+          <Route path='/accessories' element={<Accessories />} />
         </Routes>
         <Footer element={<Footer />} />
       </Router>
