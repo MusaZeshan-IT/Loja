@@ -10,7 +10,6 @@ const Accessories = () => {
 
     return (
         <div>
-            <h1 className='mt-14 text-[40px] font-semibold text-center'>ACCESSORIES</h1>
             <div className='mt-14'>
                 <CoverImage title="SHOP NOW" margin="0px 0px 30px 0px" />
             </div>

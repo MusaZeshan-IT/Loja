@@ -12,7 +12,7 @@ const Card = ({ url, imageExhausted }) => {
                     <img
                         onDragStart={(e) => e.preventDefault()}
                         src={url}
-                        className="w-full transition-transform duration-300 ease-in-out transform hover:scale-110 h-full object-cover bg-[rgb(25,25,25)]"
+                        className="w-full transition-transform duration-300 ease-in-out transform hover:scale-125 h-full object-cover bg-[rgb(25,25,25)]"
                     />
                 </div>
             )}
