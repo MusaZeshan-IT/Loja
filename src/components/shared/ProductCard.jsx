@@ -3,7 +3,7 @@ import React from 'react';
 const ProductCard = ({ name, price, imgUrl }) => {
     return (
         <div>
-            <div className='bg-[#d3d3d3] h-[400px] rounded-sm'>
+            <div className='bg-[#d3d3d3] lg-custom:h-[400px] h-[450px] rounded-sm'>
                 <img className='w-full h-full object-cover rounded-sm' src={imgUrl} alt="" />
             </div>
             <div className='flex 2xs-custom:flex-row flex-col justify-between mt-5 items-center'>

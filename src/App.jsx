@@ -10,6 +10,7 @@ import './App.css'
 import Clothes from './pages/Clothes'
 import Appliances from './pages/Appliances'
 import Accessories from './pages/Accessories'
+import LojaProducts from './pages/LojaProducts'
 
 function App() {
   const [showNavMenu, setShowNavMenu] = useState(false);
@@ -32,6 +33,7 @@ function App() {
           <Route path='/clothes' element={<Clothes />} />
           <Route path='/appliances' element={<Appliances />} />
           <Route path='/accessories' element={<Accessories />} />
+          <Route path='/loja-products' element={<LojaProducts />} />
         </Routes>
         <Footer element={<Footer />} />
       </Router>

@@ -10,7 +10,7 @@ const Navbar = ({ handleOpenNavMenu }) => {
                 <Link to="/clothes">CLOTHES</Link>
                 <Link to="/accessories">ACCESSORIES</Link>
                 <Link to="/appliances">APPLIANCES</Link>
-                <Link>LOJA PRODUCTS</Link>
+                <Link to="/loja-products">LOJA PRODUCTS</Link>
                 <Link>ABOUT US</Link>
             </nav>
             <nav className='lg:hidden block'>
