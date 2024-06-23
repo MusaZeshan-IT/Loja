@@ -11,11 +11,12 @@ import Gallery from '../components/home/Gallery';
 import SellerCTA from '../components/loja/SellerCTA';
 import Locations from '../components/loja/Locations';
 import CoverImage from '../components/home/CoverImage';
+import { Link } from 'react-router-dom';
 
 const LojaProducts = () => {
     return (
         <>
-            <div className='2xl:px-16 xl-custom:px-14 md:px-10 px-12'>
+            <div className='2xl:px-28 xl-custom:px-24 xl:px-20 lg-custom:px-16 lg:px-14 px-12'>
                 <LojaMain />
                 <div className='grid md:grid-cols-3 sm-custom:grid-cols-2 grid-cols-1 mt-28 gap-16'>
                     <CategoryCard bgImgUrl={ClothesCatImg1} name="WOMEN'S CLOTHES" />
@@ -26,8 +27,10 @@ const LojaProducts = () => {
                     <CTA title="OWN BY LOJA" margin="50px 0 0 0" />
                 </div>
             </div>
-            <Gallery />
-            <div className='2xl:px-16 xl-custom:px-14 md:px-10 px-12 py-32'>
+            <Link to="/loja-products-sub">
+                <Gallery />
+            </Link>
+            <div className='2xl:px-28 xl-custom:px-24 xl:px-20 lg-custom:px-16 lg:px-14 px-12 py-32'>
                 <SellerCTA />
                 <Locations />
             </div>

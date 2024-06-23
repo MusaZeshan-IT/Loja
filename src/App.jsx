@@ -11,6 +11,7 @@ import Clothes from './pages/Clothes'
 import Appliances from './pages/Appliances'
 import Accessories from './pages/Accessories'
 import LojaProducts from './pages/LojaProducts'
+import LojaSub from './pages/LojaSub'
 
 function App() {
   const [showNavMenu, setShowNavMenu] = useState(false);
@@ -34,6 +35,7 @@ function App() {
           <Route path='/appliances' element={<Appliances />} />
           <Route path='/accessories' element={<Accessories />} />
           <Route path='/loja-products' element={<LojaProducts />} />
+          <Route path='/loja-products-sub' element={<LojaSub />} />
         </Routes>
         <Footer element={<Footer />} />
       </Router>
