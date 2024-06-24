@@ -29,7 +29,7 @@ const LojaSub = () => {
                     </div>
                 </div>
             </div>
-            <CoverImage isCTA={false}/>
+            <CoverImage isCTA={false} />
             <div className='2xl:px-16 xl-custom:px-14 md:px-10 px-12'>
                 <div className='grid md:grid-cols-3 sm-custom:grid-cols-2 grid-cols-1 mt-28 gap-16'>
                     <CategoryCard bgImgUrl={ClothesCatImg1} name="WOMEN'S CLOTHES" />
