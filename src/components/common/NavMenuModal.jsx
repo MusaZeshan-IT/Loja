@@ -24,26 +24,26 @@ const NavMenuModal = ({ showNavMenu, handleCloseNavMenu }) => {
                             <div className='sm:w-96 w-40 border-t-2 border-black ms-5 mb-14'>
                             </div>
                             <div className='ms-6 grid sm:grid-cols-2 gap-x-16 gap-y-8 text-2xl font-semibold'>
-                                <Link>HOME</Link>
-                                <Link>CLOTHES</Link>
-                                <Link>ACCESSORIES</Link>
-                                <Link>APPLIANCES</Link>
-                                <Link>LOJA PRODUCTS</Link>
-                                <Link>ABOUT US</Link>
+                                <Link to="/">HOME</Link>
+                                <Link to="/clothes">CLOTHES</Link>
+                                <Link to="/accessories">ACCESSORIES</Link>
+                                <Link to="/appliances">APPLIANCES</Link>
+                                <Link to="/loja-products">LOJA PRODUCTS</Link>
+                                <Link to="">ABOUT US</Link>
                                 <span className='sm-custom:hidden block'>
                                     <Link>CONTACT US</Link>
                                 </span>
                                 <span className='xs:hidden block'>
                                     <Link>LOGIN / REGISTER</Link>
                                 </span>
-                            </div>
-                        </nav>
-                    </div>
+                            </div >
+                        </nav >
+                    </div >
                     <div className='mt-8 rounded-[50%] flex justify-center items-center bg-black h-10 w-10 p-2'>
                         <i className='fa-solid fa-xmark text-3xl cursor-pointer text-white' onClick={() => handleCloseNavMenu()}></i>
                     </div>
-                </div>
-            </div>
+                </div >
+            </div >
         );
     } else {
         return null;
