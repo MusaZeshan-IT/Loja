@@ -20,7 +20,7 @@ const LojaSub = () => {
                     <div className='grid lg-custom:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-24 gap-y-24'>
                         {ClothesList().map((p) => {
                             return (
-                                <ProductCard key={p.id} name={p.name} price={p.price} imgUrl={p.url} />
+                                <ProductCard key={p.id} name={p.name} price={p.price} bgimgUrl={p.url} />
                             )
                         })}
                     </div>
