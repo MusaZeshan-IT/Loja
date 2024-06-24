@@ -1,10 +1,9 @@
 import React from 'react';
 
-const ProductCard = ({ name, price, imgUrl }) => {
+const ProductCard = ({ name, price, bgimgUrl }) => {
     return (
         <div>
-            <div className='bg-[#d3d3d3] lg-custom:h-[400px] h-[450px] rounded-sm'>
-                <img className='w-full h-full object-cover rounded-sm' src={imgUrl} alt="" />
+            <div className='bg-[#d3d3d3] xs:bg-[0px_0px] bg-center lg-custom:h-[400px] h-[450px] rounded-sm' style={{ backgroundImage: `url(${bgimgUrl})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             </div>
             <div className='flex 2xs-custom:flex-row flex-col justify-between mt-5 items-center'>
                 <div className='2xs-custom:block flex'>

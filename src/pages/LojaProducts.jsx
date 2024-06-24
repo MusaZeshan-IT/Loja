@@ -10,7 +10,7 @@ import CTA from '../components/shared/CTA';
 import Gallery from '../components/home/Gallery';
 import SellerCTA from '../components/loja/SellerCTA';
 import Locations from '../components/loja/Locations';
-import CoverImage from '../components/home/CoverImage';
+import CoverImage from '../components/shared/CoverImage';
 import { Link } from 'react-router-dom';
 
 const LojaProducts = () => {

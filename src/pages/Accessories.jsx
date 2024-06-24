@@ -1,5 +1,5 @@
 import React from 'react';
-import CoverImage from '../components/home/CoverImage';
+import CoverImage from '../components/shared/CoverImage';
 import ProductCard from '../components/shared/ProductCard';
 import CTA from '../components/shared/CTA';
 import AccessoriesList from '../helpers/AccessoriesList';

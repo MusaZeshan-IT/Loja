@@ -1,5 +1,5 @@
 import React from 'react';
-import CoverImage from '../components/home/CoverImage';
+import CoverImage from '../components/shared/CoverImage';
 import ProductCard from '../components/shared/ProductCard';
 import CTA from '../components/shared/CTA';
 import ClothesList from '../helpers/ClothesList';
@@ -30,7 +30,7 @@ const Clothes = () => {
                     <div className='grid lg-custom:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-24 gap-y-24'>
                         {ClothesList().map((p) => {
                             return (
-                                <ProductCard key={p.id} name={p.name} price={p.price} imgUrl={p.url} />
+                                <ProductCard key={p.id} name={p.name} price={p.price} bgimgUrl={p.url} />
                             )
                         })}
                     </div>
