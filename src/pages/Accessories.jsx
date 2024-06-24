@@ -18,7 +18,7 @@ const Accessories = () => {
                     <div className='grid lg-custom:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-24'>
                         {AccessoriesList().map((p) => {
                             return (
-                                <ProductCard key={p.id} name={p.name} price={p.price} />
+                                <ProductCard key={p.id} name={p.name} bgimgUrl={p.url} price={p.price} />
                             )
                         })}
                     </div>
