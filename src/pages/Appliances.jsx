@@ -8,7 +8,7 @@ import CategoryCard from '../components/shared/CategoryCard';
 //Images
 import AppliancesCatImg1 from '../assets/appliances/fridge.jpg';
 import AppliancesCatImg2 from '../assets/appliances/modern-tap.jpg';
-import AppliancesCatImg3 from '../assets/appliances/steamer.jpg';
+import AppliancesCatImg3 from '../assets/appliances/smart-appliances/vivo.jpg';
 
 const Appliances = () => {
 

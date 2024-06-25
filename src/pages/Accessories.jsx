@@ -5,6 +5,11 @@ import CTA from '../components/shared/CTA';
 import AccessoriesList from '../helpers/AccessoriesList';
 import CategoryCard from '../components/shared/CategoryCard';
 
+//Images
+import AccessoriesCatImg1 from '../assets/accessories/iphone-usb-charger.jpeg';
+import AccessoriesCatImg2 from '../assets/accessories/gaming-headphone-stand.jpeg';
+import AccessoriesCatImg3 from '../assets/accessories/health-monitoring-smart-watch.jpeg';
+
 const Accessories = () => {
 
 
@@ -30,9 +35,9 @@ const Accessories = () => {
             <CoverImage isCTA={false} />
             <div className='2xl:px-28 xl-custom:px-24 xl:px-20 lg-custom:px-16 lg:px-14 px-12'>
                 <div className='grid md:grid-cols-3 sm-custom:grid-cols-2 grid-cols-1 mt-28 gap-16'>
-                    <CategoryCard name="WOMEN'S ACCESSORIES" />
-                    <CategoryCard name="MENS'S ACCESSORIES" />
-                    <CategoryCard name="KIDS'S ACCESSORIES" />
+                    <CategoryCard name="WOMEN'S ACCESSORIES" bgImgUrl={AccessoriesCatImg1} />
+                    <CategoryCard name="MENS'S ACCESSORIES" bgImgUrl={AccessoriesCatImg2} />
+                    <CategoryCard name="KIDS'S ACCESSORIES" bgImgUrl={AccessoriesCatImg3}/>
                 </div>
             </div>
         </div>
